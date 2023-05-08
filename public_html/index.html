@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="container">
-  <h1>Library System</h1>
+  <h1>Student Library System</h1>
 
   <!-- Sign Up Form -->
   <div class="card">
@@ -63,47 +63,218 @@
     </div>
   </div>
 </div>
-
+<br><br>
 <!-- Librarian Functions -->
-<div class="card function-card mt-4">
-  <div class="card-header">
-    Librarian Functions
+<h3>Librarian Functions</h3>
+<div class="row mt-4">
+  <!-- Add a book -->
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Add a Book</h5>
+        <form>
+          <div class="form-group">
+            <label for="book-title">Title</label>
+            <input type="text" class="form-control" id="book-title">
+          </div>
+          <div class="form-group">
+            <label for="book-author">Author</label>
+            <input type="text" class="form-control" id="book-author">
+          </div>
+          <div class="form-group">
+            <label for="book-isbn">ISBN</label>
+            <input type="text" class="form-control" id="book-isbn">
+          </div>
+          <div class="form-group">
+            <label for="book-quantity">Quantity</label>
+            <input type="number" class="form-control" id="book-quantity">
+          </div>
+          <button type="submit" class="btn btn-primary">Add Book</button>
+        </form>
+      </div>
+    </div>
   </div>
-  <div class="card-body">
-    <div class="row">
-      <div class="col-md-6">
-        <button class="btn btn-primary btn-block">Add Book</button>
-        <button class="btn btn-primary btn-block">Update Book</button>
-        <button class="btn btn-primary btn-block">Remove Book</button>
+
+  <!-- Update a book -->
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Update a Book</h5>
+        <form>
+          <div class="form-group">
+            <label for="book-search">Search by Title, Author, or ISBN</label>
+            <input type="text" class="form-control" id="book-search">
+          </div>
+          <div class="form-group">
+            <label for="book-title">Title</label>
+            <input type="text" class="form-control" id="book-title">
+          </div>
+          <div class="form-group">
+            <label for="book-author">Author</label>
+            <input type="text" class="form-control" id="book-author">
+          </div>
+          <div class="form-group">
+            <label for="book-isbn">ISBN</label>
+            <input type="text" class="form-control" id="book-isbn">
+          </div>
+          <div class="form-group">
+            <label for="book-quantity">Quantity</label>
+            <input type="number" class="form-control" id="book-quantity">
+          </div>
+          <button type="submit" class="btn btn-primary">Update Book</button>
+        </form>
       </div>
-      <div class="col-md-6">
-        <button class="btn btn-primary btn-block">Add Member</button>
-        <button class="btn btn-primary btn-block">Update Member</button>
-        <button class="btn btn-primary btn-block">View Member</button>
-        <button class="btn btn-primary btn-block">Remove Member</button>
+    </div>
+  </div>
+
+  <!-- Remove a book -->
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Remove a Book</h5>
+        <form>
+          <div class="form-group">
+            <label for="book-search">Search by Title, Author, or ISBN</label>
+            <input type="text" class="form-control" id="book-search">
+          </div>
+          <button type="submit" class="btn btn-danger">Remove Book</button>
+        </form>
       </div>
+    </div>
+  </div>
+
+
+<!-- Add a Member -->
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Add a Member</h5>
+      <form>
+        <div class="form-group">
+          <label for="member-name">Name</label>
+          <input type="text" class="form-control" id="member-name">
+        </div>
+        <div class="form-group">
+          <label for="member-email">Email</label>
+          <input type="email" class="form-control" id="member-email">
+        </div>
+        <div class="form-group">
+          <label for="member-username">Username</label>
+          <input type="text" class="form-control" id="member-username">
+        </div>
+        <div class="form-group">
+          <label for="member-password">Password</label>
+          <input type="password" class="form-control" id="member-password">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Member</button>
+      </form>
     </div>
   </div>
 </div>
 
-<!-- Member Functions -->
-<div class="card function-card mt-4">
-  <div class="card-header">
-    Member Functions
-  </div>
-  <div class="card-body">
-    <div class="row">
-      <div class="col-md-6">
-        <button class="btn btn-primary btn-block">View Books</button>
-        <button class="btn btn-primary btn-block">Borrow Book</button>
-        <button class="btn btn-primary btn-block">Return Book</button>
-      </div>
-      <div class="col-md-6">
-        <button class="btn btn-primary btn-block">Delete Account</button>
-      </div>
+<!-- Update a Member -->
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Update a Member</h5>
+      <form>
+        <div class="form-group">
+          <label for="member-search">Search by Name or Email</label>
+          <input type="text" class="form-control" id="member-search">
+        </div>
+        <div class="form-group">
+          <label for="member-name">Name</label>
+          <input type="text" class="form-control" id="member-name">
+        </div>
+        <div class="form-group">
+          <label for="member-email">Email</label>
+          <input type="email" class="form-control" id="member-email">
+        </div>
+        <div class="form-group">
+          <label for="member-username">Username</label>
+          <input type="text" class="form-control" id="member-username">
+        </div>
+        <div class="form-group">
+          <label for="member-password">Password</label>
+          <input type="password" class="form-control" id="member-password">
+        </div>
+        <button type="submit" class="btn btn-primary">Update Member</button>
+      </form>
     </div>
   </div>
 </div>
+
+<!-- View Members -->
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">View Members</h5>
+      <button class="btn btn-primary">View All Members</button>
+    </div>
+  </div>
+</div>
+
+<!-- Remove a Member -->
+<div class="col-md-4 mb-4">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Remove a Member</h5>
+      <form>
+        <div class="form-group">
+          <label for="member-search">Search by Name or Email</label>
+          <input type="text" class="form-control" id="member-search">
+        </div>
+        <button type="submit" class="btn btn-danger">Remove Member</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+          <!-- Member Functions -->
+<h3 class="mt-5">Member Functions</h3>
+<div class="row mt-4">
+  <!-- View Books -->
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">View Books</h5>
+        <button class="btn btn-primary">View Available Books</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Borrow a Book -->
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Borrow a Book</h5>
+        <form>
+          <div class="form-group">
+            <label for="book-search">Search by Title, Author, or ISBN</label>
+            <input type="text" class="form-control" id="book-search">
+          </div>
+          <button type="submit" class="btn btn-success">Borrow Book</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Return a Book -->
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Return a Book</h5>
+        <form>
+          <div class="form-group">
+            <label for="book-search">Search by Title, Author, or ISBN</label>
+            <input type="text" class="form-control" id="book-search">
+          </div>
+          <button type="submit" class="btn btn-warning">Return Book</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
