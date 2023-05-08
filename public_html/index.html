@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .function-card {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .function-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Library System</h1>
+
+  <!-- Sign Up Form -->
+  <div class="card">
+    <div class="card-header">
+      Sign Up
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="signup-username">Username</label>
+          <input type="text" id="signup-username" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input type="password" id="signup-confirm-password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Login Form -->
+  <div class="card mt-4">
+    <div class="card-header">
+      Login
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="login-username">Username</label>
+          <input type="text" id="login-username" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Librarian Functions -->
+<div class="card function-card mt-4">
+  <div class="card-header">
+    Librarian Functions
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-6">
+        <button class="btn btn-primary btn-block">Add Book</button>
+        <button class="btn btn-primary btn-block">Update Book</button>
+        <button class="btn btn-primary btn-block">Remove Book</button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-primary btn-block">Add Member</button>
+        <button class="btn btn-primary btn-block">Update Member</button>
+        <button class="btn btn-primary btn-block">View Member</button>
+        <button class="btn btn-primary btn-block">Remove Member</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Member Functions -->
+<div class="card function-card mt-4">
+  <div class="card-header">
+    Member Functions
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-6">
+        <button class="btn btn-primary btn-block">View Books</button>
+        <button class="btn btn-primary btn-block">Borrow Book</button>
+        <button class="btn btn-primary btn-block">Return Book</button>
+      </div>
+      <div class="col-md-6">
+        <button class="btn btn-primary btn-block">Delete Account</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
